@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-08-19T11:17:20",
+  "random_seed": 42,
+  "dataset_url": "https://www.kaggle.com/datasets/amarhaiqal/aspen-hysys-distillation-column-data",
+  "n_train": 3084,
+  "n_val": 662,
+  "n_test": 662,
+  "n_features": 20,
+  "feature_columns": [
+    "P_col",
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6",
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "L",
+    "V",
+    "D",
+    "B",
+    "F"
+  ],
+  "target_columns": [
+    "x_D"
+  ],
+  "models": {
+    "linreg": {
+      "x_D": {
+        "r2": 0.991112,
+        "rmse": 0.007077,
+        "mae": 0.004802,
+        "mape": 0.626
+      },
+      "training_time_s": 0.019,
+      "physical_pass_rate": 1.0
+    },
+    "polyreg": {
+      "x_D": {
+        "r2": 0.215208,
+        "rmse": 0.066502,
+        "mae": 0.003629,
+        "mape": 0.4174
+      },
+      "training_time_s": 0.254,
+      "physical_pass_rate": 0.998489
+    },
+    "rf": {
+      "x_D": {
+        "r2": 0.999936,
+        "rmse": 0.000599,
+        "mae": 0.000372,
+        "mape": 0.0479
+      },
+      "training_time_s": 42.721,
+      "physical_pass_rate": 1.0
+    },
+    "xgb": {
+      "x_D": {
+        "r2": 0.999887,
+        "rmse": 0.000799,
+        "mae": 0.000611,
+        "mape": 0.0773
+      },
+      "training_time_s": 10.3226,
+      "physical_pass_rate": 1.0
+    },
+    "ann": {
+      "x_D": {
+        "r2": 0.989611,
+        "rmse": 0.007651,
+        "mae": 0.001439,
+        "mape": 0.1762
+      },
+      "training_time_s": 9.7496,
+      "physical_pass_rate": 1.0
+    }
+  },
+  "selected_model": "rf",
+  "selection_rationale": "rf achieved the highest mean R2 of 0.9999 across all 1 targets on the held-out test set, outperforming xgb by 0.0000. Physical consistency pass rate: 100.0%."
+}

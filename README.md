@@ -1,7 +1,11 @@
 # Surrogate Model — Binary Distillation Column
 
+**FOSSEE Screening Task | IIT Bombay**
+
 A single-notebook, end-to-end ML surrogate that replaces expensive iterative
 process simulations for a binary distillation column with fast ML inference.
+
+This project is a screening assignment for the FOSSEE (Free and Open-Source Software for Science and Engineering Education) internship program at IIT Bombay.
 
 ## Quick Start
 
